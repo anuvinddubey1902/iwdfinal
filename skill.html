@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills</title>
+    <style>
+        header {
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+}
+header h1{
+    color: white;
+}
+.circle {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            margin: 10px;
+            padding: 30px; /* Increased padding */
+            width: 300px; /* Increased width */
+            height: 300px; /* Increased height */
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            line-height: 240px;
+            transition: transform .2s; /* Animation */
+        }
+        .circle:hover {
+            transform: scale(1.1); /* Animation */
+
+        }
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    opacity: 0.6;
+}
+
+#video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1;
+}
+    </style>
+</head>
+<body >
+    <video id="background-video" autoplay loop muted>
+        <!-- Provide multiple video sources for compatibility -->
+        <source src="D:\uni\iwd\pexels-mikhail-nilov-6963744 (1080p).mp4" type="video/mp4">
+    </video>
+    <header>
+        <span class="logo">
+            <img src="D:\uni\iwd\rvu.jpg" alt="Logo" width="300">
+        </span>
+        <h1>Anuvind Dubey</h1>
+        <nav>
+            <a href="D:\uni\iwd\index.html" class="button"><b>home</b></a>
+            
+            <a href="D:\uni\iwd\about.html" class="button"><b>About Me</b></a>
+            
+            <a href="D:\uni\iwd\contact.html" class="button"><b>Contact</b></a>
+            
+            
+            </nav>
+    </header>
+    <div id="skills">
+        <h1>Skills</h1>
+        <div class="circle">Python</div>
+        <div class="circle">Data Analysis</div>
+        <div class="circle">Machine Learning</div>
+        <div class="circle">Web Development</div>
+        <div class="circle">C++</div>
+        <div class="circle">JavaScript</div>
+    </div>
+</body>
+</html>
